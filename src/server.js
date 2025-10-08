@@ -6,7 +6,16 @@ require('./database')
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: [
+        'http://localhost:4200',
+        'https://gestorware.netlify.app/'
+
+    ],
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+        allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+        credentials: true
+}));
 app.use(express.json());
 
 
