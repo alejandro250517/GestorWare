@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
     origin: [
         'http://localhost:4200',
-        'https://gestorware.netlify.app/'
+        'https://gestorware.netlify.app'
 
     ],
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
