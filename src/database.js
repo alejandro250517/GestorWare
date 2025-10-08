@@ -1,6 +1,6 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const Usuario = require('../src/models/Usuario');
 // Conexión a MongoDB
 mongoose.connect(process.env.MONGO_URI)
